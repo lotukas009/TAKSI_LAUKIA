@@ -1,0 +1,101 @@
+/*form*/
+.form-body {
+    display: block;
+    width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-shadow: 0 4px 6px 2px #5555;
+    background-color: #f9fafa;
+    font-size: 20px;
+}
+
+.input-field {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #339;
+    height: 40px;
+    font-size: 16px;
+}
+
+label{
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+select > option {
+    display: block;
+    margin-bottom: 0.25rem;
+    width: 100%;
+}
+
+.button {
+    margin: 1rem 0;
+    padding: 5px 20px;
+    font-size: 16px;
+}
+
+::placeholder{
+    color: #d5d5d7;
+    font-size: 14px;
+}
+/*Navigation*/
+header {
+    background: grey;
+}
+
+header > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    padding: 30px 0;
+}
+
+a {
+    color: #f9fafa;
+    font-size: 25px;
+    padding-right: 40px;
+}
+/*Pixels*/
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background: url("../images/wall.jpg");
+    object-fit: cover;
+    object-position: center;
+    background-repeat:no-repeat;
+
+}
+
+.pixel {
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+/*Table*/
+table{
+    margin:20px auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+table, th, td{
+    border:1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+
+th{
+    background-color: #b6ffd9;
+}
