@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\DataHolder;
+namespace Core;
 
 class DataHolder
 {

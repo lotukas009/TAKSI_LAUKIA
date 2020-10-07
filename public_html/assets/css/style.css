@@ -4,7 +4,7 @@
 
 header {
     min-height: 70px;
-    background-color: yellow;
+    background-color: #ffef66;
     display: flex;
     align-items: center;
     position: sticky;
@@ -15,7 +15,7 @@ header {
     width: 800px;
     margin: 0 auto;
     padding: 0;
-    position: relative;
+    /*position: relative;*/
 }
 
 .wrapper a {
@@ -56,7 +56,7 @@ header {
 .card-body {
     width: 25%;
     height: 260px;
-    border: 1px solid yellow;
+    border: 1px solid #dfd9d9;
 }
 
 .service-img {
@@ -100,6 +100,15 @@ header {
     padding: 5px;
 }
 
+/*Footer*/
+footer {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffef66;
+    color: black;
+}
 /*Map*/
 
 iframe {
@@ -108,18 +117,19 @@ iframe {
 }
 
 
+
 @media only screen and (max-width: 400px) {
     .wrapper, main, footer {
         width: 400px;
     }
 
-    .container {
+    .container-big-img {
         height: 150px;
     }
 
     .container-card {
         height: auto;
-        max-width: 400px;
+        /*max-width: 400px;*/
         flex-direction: column;
         justify-content: space-around;
     }
@@ -129,27 +139,78 @@ iframe {
     }
 
     .card-body {
-        width: 33.33%;
-        height: 280px;
-        border: 1px solid yellow;
+        width: 40%;
+        height: 260px;
     }
 
     .card-text {
         font-size: 12px;
         margin-top: 0;
       }
-
 }
 
-/*Footer*/
 
-footer {
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: yellow;
-    color: black;
+/*form*/
+.form-body {
+    display: block;
+    width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-shadow: 0 4px 6px 2px #baba91;
+    background-color: #ffef66;
+    font-size: 20px;
 }
+
+.input-field {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333399;
+    height: 40px;
+    font-size: 16px;
+}
+
+label{
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+select > option {
+    display: block;
+    margin-bottom: 0.25rem;
+    width: 100%;
+}
+
+.button {
+    margin: 1rem 0;
+    padding: 5px 20px;
+    font-size: 16px;
+    background-color: #ffef66;
+}
+
+.button:hover {
+    background-color: black;
+    color: #ffef66;
+}
+
+.message {
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+.error {
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+::placeholder{
+    color: #d5d5d7;
+    font-size: 14px;
+}
+
+
+
+
+
 
 

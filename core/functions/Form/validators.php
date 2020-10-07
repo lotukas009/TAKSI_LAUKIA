@@ -10,7 +10,7 @@
 function validate_field_not_empty(string $field_value, array &$field)
 {
     if ($field_value === '') {
-        $field['error'] = 'Laukelis tuscias';
+        $field['error'] = 'Field is empty';
         return false;
     } else {
         return true;
@@ -34,10 +34,9 @@ function validate_fields_match(array $form_values, array &$form, array $params):
     if (count(array_unique($values)) === 1) {
         return true;
     } else {
-        $form['error'] = 'nesutampa password';
+        $form['error'] = 'Password does not mach';
         return false;
     }
-
 }
 
 
@@ -48,29 +47,28 @@ function validate_fields_match(array $form_values, array &$form, array $params):
  * @param $field
  * @return bool or null
  */
-function validate_field_is_number(string $field_value, array &$field)
+function validate_field_is_not_number(string $field_value, array &$field)
 {
-    if (is_numeric($field_value)) {
+    if (!is_numeric($field_value)) {
         return true;
     } else {
-        $field['error'] = 'laukelio verte privalo buti skaicius';
+        $field['error'] = 'The numbers are not accepted';
         return false;
     }
 }
 
 /**
- * validate if number is in range
+ * validate field symbols length
  *
  * @param string $field_value
  * @param array $field
  * @param array $params
  * @return bool
  */
-function validate_field_range(string $field_value, array &$field, array $params): bool
+function validate_field_length(string $field_value, array &$field, array $params): bool
 {
-    if (($field_value < $params['min']) || ($field_value > $params['max'])) {
-        $field['error'] = strtr('Laukelio vertė turi būti @from iki @to', [
-            '@from' => $params['min'],
+    if ((strlen($field_value) > $params['max'])) {
+        $field['error'] = strtr('Field length is max @to symbols!', [
             '@to' => $params['max']
         ]);
         return false;
@@ -80,33 +78,18 @@ function validate_field_range(string $field_value, array &$field, array $params)
 }
 
 /**
- * validate selector value
+ * is email input
  *
  * @param string $field_value
  * @param array $field
  * @return bool
  */
-function validate_selector_value(string $field_value, array &$field): bool
+function validate_field_email(string $field_value, array &$field)
 {
-    foreach ($field['options'] as $value => $title) {
-        if ($value === $field_value) {
-            return true;
-        }
-    }
-
-    return false;
-}
-
-/**
- *
- * @param string $field_value
- * @return bool or null
- */
-function validate_field_string_gap(string $field_value): ?bool
-{
-    if (count(explode(' ', trim($field_value))) > 1) {
+    if (filter_var($field_value, FILTER_VALIDATE_EMAIL)) {
         return true;
+    } else {
+        $field['error'] = "Email address is incorrect!";
     }
 }
-
 
