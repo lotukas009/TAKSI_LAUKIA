@@ -2,9 +2,12 @@
 
 namespace App\Views\Pages;
 
-use Core\Views\Navigation;
+use Core\Views\Content;
+use App\Views\Footer;
+use App\Views\Navigation;
+use Core\Views\Page;
 
-class BasePage extends \Core\Views\Page
+class BasePage extends Page
 {
 
     /**
@@ -20,9 +23,14 @@ class BasePage extends \Core\Views\Page
      */
     public function __construct()
     {
+        $content = new Content();
         $nav = new Navigation();
-        $this->setTitle('unkown page');
+        $footer = new Footer();
+        $this->setTitle('Unknown page');
+        $this->addCSS('assets/css/normalize.css');
+        $this->addCSS('assets/css/style.css');
+        $this->addFont("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&display=swap");
         $this->setHeader($nav->render());
-        $this->setFooter('Place for Footer');
+        $this->setFooter($footer->render());
     }
 }

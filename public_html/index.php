@@ -1,11 +1,5 @@
 <?php
+require '../bootloader.php';
 
-//use App\Controllers\pixelsController;
-//
-//require '../bootloader.php';
-//
-//
-//
-//$app->run();
+$app->run();
 
-print 'veikia';

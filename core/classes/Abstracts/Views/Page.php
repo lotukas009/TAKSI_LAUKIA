@@ -99,4 +99,7 @@ abstract class Page extends View
     {
         return parent::render($template_path);
     }
+
+    abstract public function addFont(string $font): void;
+
 }

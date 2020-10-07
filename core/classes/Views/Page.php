@@ -69,4 +69,10 @@ class Page extends \Core\Abstracts\Views\Page
     {
         $this->data['footer'] = $footer_html;
     }
+
+    public function addFont(string $font): void
+    {
+        $this->data['font'] = $font;
+    }
+
 }
