@@ -48,14 +48,14 @@ class LoginController extends Controller
             if ($login->validate()) {
                 if (App::$session->login($login->getSubmitData()['email'], $login->getSubmitData()['password'])) {
                     header('Location:' . Router::getUrl('index'));
+                    exit;
                 }
             }
-            $content = new Content(['form' => $login->render()]);
-            $this->page->setTitle('Login');
-            $this->page->setContent($login->render());
-            return $this->page->render();
         }
+        $content = new Content(['form' => $login->render()]);
+        $this->page->setTitle('Login');
+        $this->page->setContent($login->render());
+        return $this->page->render();
+
     }
-
-
 }

@@ -1,4 +1,4 @@
-<form <?php print html_attr($data['attr']); ?>>
+<form <?php print html_attr($data['attr'] ?? []); ?>>
 
     <!-- Generating fields-->
     <?php foreach ($data['fields'] ?? [] as $field_id => $field): ?>
@@ -8,20 +8,25 @@
             <span><?php print $field['label'] ?></span>
         <?php endif; ?>
         <!-- input -->
-        <?php if ($field['type'] == 'select'): ?>
+        <?php if ($field['type'] ==='select'): ?>
             <select <?php print select_attr($field_id, $field); ?>>
 
-                <?php foreach ($field['option'] as $option_id => $option_title) : ?>
+                <?php foreach ($field['option'] ?? [] as $option_id => $option_title) : ?>
                     <option <?php print option_attr($option_id, $field) ?>>
                         <?php print $option_title; ?>
                     </option>
                 <?php endforeach; ?>
 
             </select>
-
+            <!-- textarea start -->
+        <?php elseif ($field['type'] === 'textarea') : ?>
+            <textarea <?php print textarea_attr($field_id, $field); ?>>
+            </textarea>
+             <!-- textarea end -->
         <?php else: ?>
             <input <?php print input_attr($field_id, $field); ?> />
         <?php endif; ?>
+        <!-- input end -->
         <!-- label end -->
         <?php if (isset($field['label'])) : ?>
             </label>

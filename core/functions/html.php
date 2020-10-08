@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 /**
- * generate tag attributes with values
+ * Generating tag attributes with values
  *
  * @param array $attrs
  * @return string
@@ -71,20 +71,6 @@ function select_attr(string $field_id, array $field): string
     return html_attr($attributes);
 }
 
-function range_attr(string $field_id, array $field): string
-{
-    $attributes = [
-        'name' => $field_id,
-        'type' => $field['type'],
-        'value' => $field['value'] ?? '',
-        'min' => $field['min_value'],
-        'max' => $field['max_value'],
-    ];
-    $attributes += $field['extra']['attr'] ?? [];
-
-    return html_attr($attributes);
-}
-
 /**
  * Generating option tag
  *
@@ -106,7 +92,7 @@ function option_attr(string $option_id, array $field): string
 }
 
 /**
- * sanitize array keys from form
+ * Sanitize array keys from form
  *
  * @param array $form
  * @return array
@@ -121,22 +107,22 @@ function sanitize_form_input_values(array $form): array
 }
 
 /**
- * create array for table template
+ * Generates textarea field from given array
  *
- * @param array $data_array
- * @param array $headers
- * @return array
+ * @param string $field_id
+ * @param array $field
+ * @return string
  */
-function create_table_array(array $data_array, array $headers): array
+
+function textarea_attr(string $field_id, array $field): string
 {
-    $table = [];
-    foreach ($headers as $header) {
-        $table['headers'][] = $header ?? '';
-    }
+    $attributes = [
+        'name' => $field_id,
+        'type' => $field['type'],
+        'value' => $field['value'] ?? '',
+    ];
 
-    foreach ($data_array as $col) {
-        $table['rows'][] = $col;
-    }
-
-    return $table;
+    $attributes += $button['extra']['attr'] ?? [];
+    return html_attr($attributes);
 }
+

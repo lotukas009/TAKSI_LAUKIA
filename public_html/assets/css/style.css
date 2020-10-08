@@ -174,12 +174,6 @@ label{
     margin-bottom: 0.25rem;
 }
 
-select > option {
-    display: block;
-    margin-bottom: 0.25rem;
-    width: 100%;
-}
-
 .button {
     margin: 1rem 0;
     padding: 5px 20px;
@@ -208,7 +202,27 @@ select > option {
     font-size: 14px;
 }
 
+.feedbackinput-field {
+    margin: 50px auto;
+    max-width: 400px;
+    border: none;
+}
 
+.form-body2 {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-shadow: 0 4px 6px 2px #baba91;
+    background-color: #ffef66;
+    font-size: 20px;
+}
+.form-body2 > label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
 
 
 

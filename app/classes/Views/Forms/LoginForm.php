@@ -60,10 +60,7 @@ use Core\Views\Form;
                     ],
                 ],
                 'validators' => [
-                    'validate_login' => [
-                        'email',
-                        'password',
-                    ],
+                    'validate_login' ,
                 ],
             ];
 
