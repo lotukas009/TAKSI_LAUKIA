@@ -20,35 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cfd4f99-e46f-460e-9538-79911ab39bac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/classes/Controllers/FeedbackController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/classes/Controllers/UsersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/classes/Feedback/Feedback.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/classes/Views/Forms/FeedbackForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/classes/Views/Tables/UsersTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/classes/Views/Table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/templates/table.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TAKSI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TAKSI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/content/feedback.tpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/content/form.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/classes/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/classes/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/classes/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/classes/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/classes/Controllers/FeedbackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/classes/Controllers/FeedbackController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/classes/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/classes/Controllers/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/classes/Views/Footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/classes/Views/Footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/classes/Views/Forms/LoginForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/classes/Views/Forms/LoginForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/classes/Views/Forms/FeedbackForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/classes/Views/Forms/FeedbackForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/classes/Views/Tables/UsersTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/classes/Views/Tables/FeedbackTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/data/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/partials/footer.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/partials/footer.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootloader.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootloader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/classes/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/classes/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/functions/file.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/content/index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/content/index.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/classes/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/classes/View.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/classes/Views/Content.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/classes/Views/Content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/functions/Form/validators.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/functions/Form/validators.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/functions/html.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/functions/html.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/templates/form.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/form.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/table.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/table.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/assets/images/Form-bp1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/assets/images/SmallCar1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/assets/images/cuba_car3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/assets/images/cuba_car_paint2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/assets/images/cuba_car_paint3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/assets/images/cuba_car_paint4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/assets/images/cuba_car_paint6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/assets/images/cuba_car_paint_d1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/test.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../VALIO" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates/content" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -88,11 +86,11 @@
       <recent name="C:\Users\JURATE\Desktop\TAKSI\core\functions\Form" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JURATE\Desktop\TAKSI\app\templates\content" />
       <recent name="C:\Users\JURATE\Desktop\TAKSI\app\classes\Controllers" />
       <recent name="C:\Users\JURATE\Desktop\TAKSI\core\classes\Views" />
       <recent name="C:\Users\JURATE\Desktop\TAKSI\app\classes\Views" />
       <recent name="C:\Users\JURATE\Desktop\TAKSI\app\classes\Views\Forms" />
-      <recent name="C:\Users\JURATE\Desktop\TAKSI\app\classes" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -105,7 +103,7 @@
       <updated>1601989496149</updated>
       <workItem from="1601989497358" duration="17965000" />
       <workItem from="1602041584096" duration="40719000" />
-      <workItem from="1602128697119" duration="10646000" />
+      <workItem from="1602128697119" duration="58861000" />
     </task>
     <servers />
   </component>
@@ -129,18 +127,18 @@
       <screen x="0" y="0" width="1440" height="897" />
     </state>
     <state x="438" y="231" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.897@0.0.1440.897" timestamp="1602007414412" />
-    <state x="307" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602042404290">
+    <state x="307" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602176650377">
       <screen x="0" y="0" width="1440" height="897" />
     </state>
-    <state x="307" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.897@0.0.1440.897" timestamp="1602042404290" />
+    <state x="307" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.897@0.0.1440.897" timestamp="1602176650377" />
     <state x="385" y="134" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601990667160">
       <screen x="0" y="0" width="1440" height="897" />
     </state>
     <state x="385" y="134" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.897@0.0.1440.897" timestamp="1601990667160" />
-    <state x="385" y="144" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602134217119">
+    <state x="385" y="144" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602143956459">
       <screen x="0" y="0" width="1440" height="897" />
     </state>
-    <state x="385" y="144" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.897@0.0.1440.897" timestamp="1602134217119" />
+    <state x="385" y="144" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.897@0.0.1440.897" timestamp="1602143956459" />
     <state x="447" y="144" key="FileChooserDialogImpl" timestamp="1602097699718">
       <screen x="0" y="0" width="1440" height="897" />
     </state>
@@ -154,8 +152,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/classes/Views/Tables/UsersTable.php</url>
-          <line>4</line>
+          <url>file://$PROJECT_DIR$/app/classes/Views/Tables/FeedbackTable.php</url>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

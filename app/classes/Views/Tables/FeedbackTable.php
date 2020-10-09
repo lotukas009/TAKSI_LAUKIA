@@ -1,21 +1,20 @@
 <?php
-
 namespace App\Views\Tables;
 
 use App\App;
-use Core\View\Table;
+use Core\Views\Table;
 
-class UsersTable extends Table
+class FeedbackTable extends Table
 {
     public function __construct()
     {
 
-        $data = App::$db->getRowsWhere('feedback_data', []);
+        $data = App::$db->getRowsWhere('feedback', []);
 
         $table = [
             'headers' => [
                 'Name',
-                'Comment',
+                'Feedback',
                 'Date',
             ],
             'rows' => $data,

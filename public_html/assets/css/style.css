@@ -1,21 +1,27 @@
-*{font-family: 'Architects Daughter', cursive;}
+* {
+    font-family: 'Architects Daughter', cursive;
+}
 
-/*Header*/
+main {
+    min-height: 82vh;
+}
 
+/*Header, Navigation*/
 header {
     min-height: 70px;
     background-color: #ffef66;
     display: flex;
     align-items: center;
     position: sticky;
-    top: 0;
+    /*top: 0;*/
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper {
     width: 800px;
     margin: 0 auto;
     padding: 0;
-    /*position: relative;*/
 }
 
 .wrapper a {
@@ -55,27 +61,26 @@ header {
 
 .card-body {
     width: 25%;
-    height: 260px;
+    height: 300px;
     border: 1px solid #dfd9d9;
+    text-align: center;
 }
 
 .service-img {
-    height: 40%;
-    width: 100%;
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
+    height: 40%;
+    width: 100%;
 }
 
 .img-1 {
     background-image: url("../images/cuba_car_paint8.jpg");
-
 }
 
 .img-2 {
     background-image: url("../images/cuba_car_paint1.jpg");
-
 }
 
 .img-3 {
@@ -85,7 +90,6 @@ header {
 .card-content {
     padding: 5px;
     box-sizing: border-box;
-    flex-grow: 1;
 }
 
 .card-title {
@@ -95,9 +99,15 @@ header {
 }
 
 .card-text {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 0;
     padding: 5px;
+}
+
+/*Map*/
+iframe {
+    width: 100%;
+    height: 300px;
 }
 
 /*Footer*/
@@ -109,18 +119,16 @@ footer {
     background-color: #ffef66;
     color: black;
 }
-/*Map*/
 
-iframe {
-    width: 100%;
-    height: 300px;
-}
-
-
-
+/*Mobile*/
 @media only screen and (max-width: 400px) {
-    .wrapper, main, footer {
-        width: 400px;
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .wrapper a {
+        font-size: 18px;
     }
 
     .container-big-img {
@@ -129,9 +137,8 @@ iframe {
 
     .container-card {
         height: auto;
-        /*max-width: 400px;*/
+        display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
 
     .card-body:not(:last-child) {
@@ -139,18 +146,11 @@ iframe {
     }
 
     .card-body {
-        width: 40%;
-        height: 260px;
+        width: 100%;
     }
-
-    .card-text {
-        font-size: 12px;
-        margin-top: 0;
-      }
 }
 
-
-/*form*/
+/*forms*/
 .form-body {
     display: block;
     width: 400px;
@@ -169,7 +169,7 @@ iframe {
     font-size: 16px;
 }
 
-label{
+label {
     display: block;
     margin-bottom: 0.25rem;
 }
@@ -191,13 +191,14 @@ label{
     font-size: 15px;
     font-weight: bold;
 }
+
 .error {
     color: red;
     font-size: 15px;
     font-weight: bold;
 }
 
-::placeholder{
+::placeholder {
     color: #d5d5d7;
     font-size: 14px;
 }
@@ -211,20 +212,74 @@ label{
 .form-body2 {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width:670px;
     margin: 2rem auto;
     padding: 1rem;
     box-shadow: 0 4px 6px 2px #baba91;
     background-color: #ffef66;
     font-size: 20px;
 }
-.form-body2 > label{
+
+.form-body2 > label {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
+/*all pages*/
+.main-background {
+    background-image: url("../images/Form-bp.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
 
+}
 
+/*table*/
+table {
+    width: 50%;
+    margin: 30px auto;
+}
 
+thead > tr > th {
+    color: #ffef66;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+}
 
+thead > tr > th:nth-child(2) {
+    width: 50%;
+}
+
+tbody > tr > td {
+    font-size: 18px;
+    padding: 10px;
+    background-color: black;
+    color: #ffef66;
+}
+
+.feedback-msg {
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.feedback-msg > span > a {
+    font-size: 25px;
+    color: #ffef66;
+    text-align: center;
+    background-color: black;
+}
+
+.feedback-msg > span > a:hover {
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    color: #ffef66;
+}

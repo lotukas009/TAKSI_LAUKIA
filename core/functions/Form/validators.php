@@ -7,38 +7,15 @@
  * @param $field
  * @return bool or null
  */
-function validate_field_not_empty(string $field_value, array &$field)
+function validate_field_not_empty(string $field_value, array &$field): ?bool
 {
     if ($field_value === '') {
-        $field['error'] = 'Field is empty';
+        $field['error'] = 'Field is empty!';
         return false;
     } else {
         return true;
     }
 }
-
-/**
- *  validate password match
- *
- * @param array $form_values
- * @param array $form
- * @param array $params
- * @return bool
- */
-function validate_fields_match(array $form_values, array &$form, array $params): bool
-{
-    $values = [];
-    foreach ($params as $param) {
-        $values[] = $form_values[$param];
-    }
-    if (count(array_unique($values)) === 1) {
-        return true;
-    } else {
-        $form['error'] = 'Password does not mach';
-        return false;
-    }
-}
-
 
 /**
  * is numeric input error message

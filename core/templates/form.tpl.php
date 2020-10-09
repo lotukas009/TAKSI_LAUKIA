@@ -8,7 +8,7 @@
             <span><?php print $field['label'] ?></span>
         <?php endif; ?>
         <!-- input -->
-        <?php if ($field['type'] ==='select'): ?>
+        <?php if ($field['type'] === 'select'): ?>
             <select <?php print select_attr($field_id, $field); ?>>
 
                 <?php foreach ($field['option'] ?? [] as $option_id => $option_title) : ?>
@@ -22,7 +22,7 @@
         <?php elseif ($field['type'] === 'textarea') : ?>
             <textarea <?php print textarea_attr($field_id, $field); ?>>
             </textarea>
-             <!-- textarea end -->
+            <!-- textarea end -->
         <?php else: ?>
             <input <?php print input_attr($field_id, $field); ?> />
         <?php endif; ?>

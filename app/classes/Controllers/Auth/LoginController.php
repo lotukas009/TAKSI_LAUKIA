@@ -54,7 +54,7 @@ class LoginController extends Controller
         }
         $content = new Content(['form' => $login->render()]);
         $this->page->setTitle('Login');
-        $this->page->setContent($login->render());
+        $this->page->setContent($content->render('form.tpl.php'));
         return $this->page->render();
 
     }

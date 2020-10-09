@@ -3,6 +3,7 @@
 namespace App\Controllers;
 use App\Abstracts\Controller;
 
+use App\Views\Pages\BasePage;
 use Core\Views\Content;
 
 class IndexController extends Controller
@@ -36,11 +37,11 @@ class IndexController extends Controller
     {
 
         $content = new Content();
+        $page = new BasePage();
+        $page->setTitle('Index');
+        $page->setContent($content->render('index.tpl.php'));
 
-        $this->page->setTitle('Index');
-        $this->page->setContent($content->render('index.tpl.php'));
-
-        return $this->page->render();
+        return $page->render();
     }
 
 }

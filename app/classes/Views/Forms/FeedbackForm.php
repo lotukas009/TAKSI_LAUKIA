@@ -27,6 +27,8 @@ class FeedbackForm extends Form
                     ],
                     'extra' => [
                         'attr' => [
+                            'rows' => 6,
+                            'cols' => 50,
                             'class' => 'feedbackinput-field',
                             'placeholder' => 'Thank you for commenting'
                         ],
@@ -42,6 +44,8 @@ class FeedbackForm extends Form
                         ],
                     ],
                 ],
+            ],
+            'validators' => [
             ],
         ];
 

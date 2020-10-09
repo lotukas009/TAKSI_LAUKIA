@@ -1,5 +1,4 @@
 <?php
-declare(strict_types=1);
 
 /**
  * Generating tag attributes with values
@@ -56,6 +55,26 @@ function button_attr(string $button_id, array $button): string
 }
 
 /**
+ * Generates textarea field from given array
+ *
+ * @param string $field_id
+ * @param array $field
+ * @return string
+ */
+
+function textarea_attr(string $field_id, array $field): string
+{
+    $attributes = [
+        'name' => $field_id,
+        'type' => $field['type'],
+        'value' => $field['value'] ?? '',
+    ];
+
+    $attributes += $button['extra']['attr'] ?? [];
+    return html_attr($attributes);
+}
+
+/**
  * Generating select tag attributes from given array
  *
  * @param string $field_id
@@ -106,23 +125,4 @@ function sanitize_form_input_values(array $form): array
     return filter_input_array(INPUT_POST, $filter_parameters);
 }
 
-/**
- * Generates textarea field from given array
- *
- * @param string $field_id
- * @param array $field
- * @return string
- */
-
-function textarea_attr(string $field_id, array $field): string
-{
-    $attributes = [
-        'name' => $field_id,
-        'type' => $field['type'],
-        'value' => $field['value'] ?? '',
-    ];
-
-    $attributes += $button['extra']['attr'] ?? [];
-    return html_attr($attributes);
-}
 

@@ -12,3 +12,4 @@ class Content extends View
         return parent::render($template_path);
     }
 }
+

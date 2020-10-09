@@ -3,10 +3,9 @@
 namespace App\Controllers\Auth;
 
 use App\Abstracts\Controller;
+use App\App;
 use App\Users\User;
 use App\Views\Forms\RegisterForm;
-use App\Views\Pages\BasePage;
-use App\App;
 use Core\Router;
 use Core\Views\Content;
 
@@ -28,7 +27,7 @@ class RegisterController extends Controller
      *
      * These methods can then be called on each page accordingly, ex.:
      * add.php:
-     * $controller = new PixelsController();
+     * $controller = new FeedbackController();
      * print $controller->add();
      *
      *
@@ -40,20 +39,20 @@ class RegisterController extends Controller
      */
     function index(): ?string
     {
-        $register = new RegisterForm();
+        $registerForm = new RegisterForm();
 
-        if ($register->isSubmitted()) {
-            if ($register->validate()) {
-                $user = new User($register->getSubmitData());
-
+        if ($registerForm->isSubmitted()) {
+            if ($registerForm->validate()) {
+                $user = new User($registerForm->getSubmitData());
                 App::$db->insertRow('users', $user->_getData());
-                header('Location:'. Router::getUrl('login'));
-                exit();
+                header('Location:' . Router::getUrl('login'));
+                exit;
             }
         }
-        $content = new Content(['form' => $register->render()]);
-        $this->page->setTitle('Registration');
-        $this->page->setContent($register->render());
+        $content = new Content(['form'=>$registerForm->render()]);
+
+        $this->page->setTitle('Register');
+        $this->page->setContent($content->render('form.tpl.php'));
         return $this->page->render();
     }
 }
